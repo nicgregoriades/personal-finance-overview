@@ -166,4 +166,9 @@ const Assets = () => {
                       </Typography>
                     </Grid>
                     <Grid item xs={2}>
-                      <IconButton onClick={() =>
+                      <IconButton onClick={() => handleEdit(asset)} size="small">
+                        <EditIcon />
+                      </IconButton>
+                      <IconButton onClick={() => deleteAsset(asset.id)} size="small" color="error">
+                        <DeleteIcon />
+                      </IconButton>
